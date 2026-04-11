@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャンセルポリシー — Studio Liu</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon-fixed.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;600&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #B8B5B0; --bg-section: #BFBCB7;
+            --dark: #1A1A1A; --dark-soft: #2A2A2A;
+            --text: #1A1A1A; --text-light: #4A4A4A; --text-muted: #6A6A6A;
+            --white: #FFFFFF;
+            --gold: #E8C840;
+            --sans: 'Noto Sans JP', 'Outfit', sans-serif;
+            --eng: 'Outfit', 'Noto Sans JP', sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.8; -webkit-font-smoothing: antialiased; font-weight: 300; }
+
+        header { padding: 0.9rem 5%; display: flex; justify-content: space-between; align-items: center; background: var(--dark); }
+        .logo-img { height: 44px; width: auto; }
+        .back-link { text-decoration: none; color: rgba(255,255,255,0.7); font-family: var(--eng); font-size: 0.75rem; font-weight: 300; letter-spacing: 0.15em; transition: color 0.3s; }
+        .back-link:hover { color: var(--white); }
+
+        .page-content { max-width: 780px; margin: 0 auto; padding: 5rem 5% 6rem; }
+        .page-title { font-family: var(--eng); font-size: 2rem; font-weight: 300; letter-spacing: 0.02em; margin-bottom: 0.5rem; }
+        .page-title-ja { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 3rem; font-weight: 300; }
+        .page-divider { width: 40px; height: 1px; background: var(--text-muted); margin-bottom: 3rem; }
+
+        .policy-intro { font-size: 0.88rem; color: var(--text-light); line-height: 2.2; margin-bottom: 3rem; font-weight: 300; }
+
+        .policy-section { margin-bottom: 2.5rem; }
+        .policy-section h2 { font-size: 0.92rem; font-weight: 500; margin-bottom: 1rem; color: var(--text); border-left: 3px solid var(--gold); padding-left: 0.8rem; }
+        .policy-section p { font-size: 0.85rem; color: var(--text-light); line-height: 2.2; font-weight: 300; }
+        .policy-section ul { list-style: none; margin-top: 0.5rem; }
+        .policy-section ul li { font-size: 0.85rem; color: var(--text-light); line-height: 2.2; font-weight: 300; padding-left: 1em; position: relative; }
+        .policy-section ul li::before { content: '・'; position: absolute; left: 0; }
+        .policy-section .note { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.3rem; padding-left: 1em; }
+
+        .cancel-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .cancel-table th, .cancel-table td { font-size: 0.85rem; padding: 0.8rem 1.2rem; text-align: left; border-bottom: 1px solid rgba(0,0,0,0.08); font-weight: 300; }
+        .cancel-table th { font-weight: 500; color: var(--text); background: rgba(0,0,0,0.03); }
+        .cancel-table td { color: var(--text-light); }
+        .cancel-table td:last-child { font-family: var(--eng); font-weight: 400; }
+
+        footer { padding: 2.5rem 5%; background: var(--dark); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        footer p { font-family: var(--eng); font-size: 0.65rem; color: rgba(255,255,255,0.35); letter-spacing: 0.08em; font-weight: 300; }
+        .footer-links { display: flex; gap: 1.5rem; }
+        .footer-links a { font-size: 0.65rem; color: rgba(255,255,255,0.35); text-decoration: none; letter-spacing: 0.05em; transition: color 0.3s; }
+        .footer-links a:hover { color: rgba(255,255,255,0.6); }
+
+        @media (max-width: 768px) {
+            .page-title { font-size: 1.6rem; }
+            .cancel-table th, .cancel-table td { padding: 0.6rem 0.8rem; font-size: 0.8rem; }
+            footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/LiuSNS.png" alt="Studio Liu" class="logo-img"></a>
+        <a href="index.html" class="back-link">← Back to Top</a>
+    </header>
+
+    <div class="page-content">
+        <h1 class="page-title">Cancellation Policy</h1>
+        <p class="page-title-ja">キャンセルポリシー</p>
+        <div class="page-divider"></div>
+
+        <p class="policy-intro">撮影日のキャンセル・日程変更につきましては、撮影日7日前まで無料で承ります。それ以降のキャンセルにつきましては、規定のキャンセル料を申し受けます。<br>天候やお子さまの体調不良など、やむを得ない事情の場合は、できる限り柔軟に対応いたしますので、お早めにご相談ください。</p>
+
+        <div class="policy-section">
+            <h2>撮影日のキャンセル・日程変更</h2>
+            <p>以下のキャンセル料を申し受けます。</p>
+            <table class="cancel-table">
+                <tr><th>時期</th><th>キャンセル料</th></tr>
+                <tr><td>撮影日 7日前まで</td><td>なし</td></tr>
+                <tr><td>撮影日 6〜3日前</td><td>ご利用料金の 30%</td></tr>
+                <tr><td>撮影日 2日前〜前日</td><td>ご利用料金の 50%</td></tr>
+                <tr><td>撮影日 当日</td><td>ご利用料金の 100%</td></tr>
+            </table>
+        </div>
+
+        <div class="policy-section">
+            <h2>天候によるロケーション撮影</h2>
+            <p>悪天候（大雨・暴風・警報発令時など）の場合、前日までの日程変更はキャンセル料なし。</p>
+            <ul>
+                <li>当日の天候判断は 前日18:00までにご相談</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>お子さまの発熱・体調不良の場合</h2>
+            <ul>
+                <li>前日までの日程変更はキャンセル料なし</li>
+                <li>当日のご連絡の場合は、状況により柔軟に対応いたします</li>
+            </ul>
+            <p class="note">（※ キャンセル料が発生する場合もございます）</p>
+        </div>
+
+        <div class="policy-section">
+            <h2>日程変更について（体調不良等以外の場合）</h2>
+            <ul>
+                <li>撮影日の7日前までのご連絡で、1回まで無料で日程変更可能</li>
+                <li>2回目以降の日程変更は、¥5,500 の変更手数料を頂戴いたします</li>
+            </ul>
+        </div>
+
+        <div class="policy-section">
+            <h2>撮影に関する特記事項</h2>
+            <p>ヘアメイク・外部スタッフ手配後のキャンセルは、実費（ヘアメイク・アテンド等）をご請求させていただく場合がございます。</p>
+            <p>ロケ地使用料・入場料が発生する場合は、実費をご負担いただきます。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Studio Liu / Conferista,Ltd. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="terms.html">利用規約</a>
+            <a href="cancel.html">キャンセルポリシー</a>
+        </div>
+    </footer>
+</body>
+</html>
