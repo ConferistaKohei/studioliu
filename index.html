@@ -438,7 +438,7 @@
                     <p class="plan-desc">人体に害を及ぼす原材料を一切含まないことを証明するAPマークを取得した絵の具を使用し、お腹半分にペイントします。</p>
                     <div class="plan-price">41,000 <small>円/税込み</small></div>
                     <ul class="plan-features"><li>撮影：60分</li><li>納品：60カット</li><li>ヘアメイク（1名分）</li><li>スタジオ撮影</li><li>家族・兄弟撮影可</li><li>衣装：1パターン</li><li>ペイント：約30-60分</li></ul>
-                    <p class="plan-note">※ サンプルデザインを3種類ご用意<br>※ 持込みデザインは別途追加料金がかかる場合がございます</p>
+                    <p class="plan-note">※ サンプルデザインは３種類ご用意しています<br>※ 持ち込みデザインによっては別途料金がかかる場合がございます</p>
                 </div>
                 <div class="plan-card reveal">
                     <span class="plan-badge">Special</span>
@@ -446,7 +446,7 @@
                     <p class="plan-desc">お腹全体にボディペイント。赤ちゃんを包み込むような華やかな演出ができます。</p>
                     <div class="plan-price">45,000 <small>円/税込み</small></div>
                     <ul class="plan-features"><li>撮影：60分</li><li>納品：60カット</li><li>ヘアメイク（1名分）</li><li>スタジオ撮影</li><li>家族・兄弟撮影可</li><li>衣装：1パターン</li><li>ペイント：約30-60分</li></ul>
-                    <p class="plan-note">※ サンプルデザインを3種類ご用意<br>※ 持込みデザインは別途追加料金がかかる場合がございます</p>
+                    <p class="plan-note">※ サンプルデザインは３種類ご用意しています<br>※ 持ち込みデザインによっては別途料金がかかる場合がございます</p>
                 </div>
             </div>
             <div class="tab-gallery reveal">
@@ -514,7 +514,7 @@
                 <svg viewBox="0 0 24 24"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
                 公式LINEで相談する
             </a>
-            <p class="contact-sub">メール：<a href="/cdn-cgi/l/email-protection#9dfef2f3e9fcfee9ddeee9e8f9f4f2f1f4e8b3f7ed"><span class="__cf_email__" data-cfemail="f2919d9c86939186b2818687969b9d9e9b87dc9882">[email&#160;protected]</span></a></p>
+            <p class="contact-sub">メール：<a href="mailto:contact@studioliu.jp">contact@studioliu.jp</a></p>
         </div>
     </section>
 
@@ -527,7 +527,7 @@
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         var cursorDot = document.querySelector('.cursor-dot');
         document.addEventListener('mousemove', function(e) {
             cursorDot.style.left = e.clientX + 'px';
@@ -572,4 +572,11 @@
               });
 
         document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-            a.addEventListener('click', functio
+            a.addEventListener('click', function(e) {
+                var t = document.querySelector(this.getAttribute('href'));
+                if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+</body>
+</html>
